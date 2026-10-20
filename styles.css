@@ -20,7 +20,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: #f7f6f3;
-  font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  font-family: "IBM Plex Sans", Inter, "Segoe UI", system-ui, sans-serif;
   line-height: 1.45;
 }
 
@@ -190,8 +190,14 @@ ul.bullets li + li {
 }
 
 @media print {
+  /* Compact one-page layout for the A4 PDF */
+  html {
+    font-size: 11px;
+  }
+
   body {
     background: #fff;
+    line-height: 1.3;
   }
 
   .page {
@@ -208,7 +214,63 @@ ul.bullets li + li {
     text-decoration: none;
   }
 
+  .meta a,
+  .sub a,
+  .award a {
+    color: var(--accent);
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .meta {
+    margin-top: 0.4rem;
+  }
+
   section {
+    margin-top: 0.85rem;
+    padding-top: 0.6rem;
+  }
+
+  section h2 {
+    margin-bottom: 0.4rem;
+  }
+
+  .job,
+  .project {
+    margin-bottom: 0.6rem;
     break-inside: avoid;
+  }
+
+  .sub {
+    margin: 0.05rem 0 0.15rem;
+  }
+
+  ul.bullets {
+    margin-top: 0.15rem;
+  }
+
+  ul.bullets li + li {
+    margin-top: 0.1rem;
+  }
+
+  /* Personal projects: name and description on one line */
+  .mini {
+    margin-bottom: 0.25rem;
+  }
+
+  .mini .project-head,
+  .mini .sub {
+    display: inline;
+  }
+
+  .mini .project-head h3 {
+    display: inline;
+  }
+
+  .mini .project-head::after {
+    content: " · ";
+    color: var(--muted);
   }
 }
