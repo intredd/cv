@@ -70,8 +70,8 @@
           <ul class="bullets">
             <li>Built the whole frontend alone in Webflow, with GSAP animation and a custom GLSL effect; the site won Awwwards Site of the Day and the Developer Award, FWA of the Day and CSSDA Website of the Day.</li>
             <li>Moved the site from Webflow hosting to Cloudflare Pages and reworked the CSS and load order: Lighthouse Performance (desktop) went from about 71 to 97, and the site passes Core Web Vitals on desktop for real users (LCP 0.9 s).</li>
-            <li>Cut the 3D assets by 80% by merging two 5 MB models into one 2 MB model.</li>
-            <li>Brought the fullscreen idle screensaver down to 0.3–1.5% CPU and kept the shader effect at about 100 FPS under 14.7× CPU throttling, so the site stays light on slower machines.</li>
+            <li>Cut the 3D assets by 80% (two 5 MB models down to one 2 MB file) by merging the models and compressing them with Draco.</li>
+            <li>Cut the CPU use of the fullscreen idle screensaver from 4–10% to 0.3–1.5%, and kept the shader effect at about 100 FPS under 14.7× CPU throttling.</li>
           </ul>
         </article>
         <article class="project">
