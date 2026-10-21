@@ -47,8 +47,8 @@
         <h2>Навыки</h2>
         <ul class="skills">
           <li><span>Motion и 3D:</span> GSAP, anime.js, Lenis, WebGL, GLSL, OGL, Three.js, React Three Fiber, glTF, Blender</li>
-          <li><span>Frontend:</span> HTML, CSS, SCSS, JavaScript, TypeScript, React, Vite, Git</li>
-          <li><span>Платформы:</span> Webflow, Shopify, Cloudflare Pages</li>
+          <li><span>Frontend:</span> HTML, CSS, SCSS, JavaScript, TypeScript, React, Vite, esbuild, Node.js, Git</li>
+          <li><span>Платформы:</span> Webflow, Shopify, Cloudflare Pages, Docker</li>
         </ul>
       </section>
 
@@ -70,8 +70,9 @@
           <ul class="bullets">
             <li>Один сделал весь фронтенд на Webflow с анимацией на GSAP и собственным GLSL-эффектом; сайт получил Awwwards Site of the Day и Developer Award, FWA of the Day и CSSDA Website of the Day.</li>
             <li>Перенёс сайт с хостинга Webflow на Cloudflare Pages и переработал CSS и порядок загрузки: Lighthouse Performance (desktop) вырос примерно с 71 до 97, а сайт проходит Core Web Vitals на десктопе по данным реальных пользователей (LCP 0,9 с).</li>
+            <li>Сделал пайплайн публикации на Node.js: подписанный вебхук Webflow запускает выгрузку сайта и CMS через Data API, пересборку с моими бандлами, проверку и деплой на Cloudflare Pages через Wrangler, так что публикация в Webflow сразу уходит в продакшн.</li>
             <li>Сократил 3D-ассеты на 80% (две модели по 5 МБ превратились в один файл на 2 МБ): объединил модели и сжал их через Draco.</li>
-            <li>Снизил нагрузку на CPU полноэкранной заставки в режиме простоя с 4–10% до 0,3–1,5% и удержал шейдерный эффект около 100 FPS при 14,7-кратном замедлении CPU.</li>
+            <li>Снизил нагрузку на CPU полноэкранной заставки в простое с 4–10% до 0,3–1,5%; шейдерный эффект держит около 100 FPS при 14,7× замедлении CPU.</li>
           </ul>
         </article>
         <article class="project">
@@ -84,7 +85,7 @@
             <li>Как единственный разработчик сделал Shopify-тему на 14 страниц с анимацией на GSAP, секциями из CMS и собственным GLSL-градиентом на фоне; довёл её через девять месяцев разработки и многократные изменения дизайна.</li>
             <li>Превратил CAD-модель инженеров в 600-кадровую анимацию при прокрутке, которая рисуется через WebGL, с видео вместо неё на слабых устройствах: почистил меш, настроил материалы, свет и анимацию в Blender.</li>
             <li>Спроектировал поэтапную загрузку секвенции (сначала каждый десятый кадр, затем промежуточные) и провёл несколько раундов оптимизации сайта: LCP снизился с 4,5–7 с до 1,3–2 с, а потребление памяти на самой тяжёлой странице — с 600–700 МБ до 300–350 МБ.</li>
-            <li>Участвовал в работе над дизайном с этапа концепта и отмечал идеи, которые будет трудно реализовать, чтобы дизайн оставался реальным для разработки.</li>
+            <li>Участвовал в дизайне с этапа концепта и отмечал идеи, которые трудно реализовать, чтобы дизайн оставался реальным для разработки.</li>
           </ul>
         </article>
         <article class="project">
@@ -126,7 +127,7 @@
           <div class="project-head">
             <h3>Peel Gallery</h3>
           </div>
-          <p class="sub">vanilla WebGL + GSAP · галерея с бесконечной прокруткой, где карточки изгибаются как одна поверхность, а текст остаётся выделяемым · <a href="https://intredd.github.io/peel-gallery/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/peel-gallery" target="_blank" rel="noopener noreferrer">code</a></p>
+          <p class="sub">vanilla WebGL + GSAP · бесконечная галерея: карточки изгибаются как одна поверхность, текст можно выделять · <a href="https://intredd.github.io/peel-gallery/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/peel-gallery" target="_blank" rel="noopener noreferrer">code</a></p>
         </article>
         <article class="project mini">
           <div class="project-head">
