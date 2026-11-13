@@ -34,7 +34,7 @@
 
       <section>
         <h2>О себе</h2>
-        <p class="summary">Превращаю готовый дизайн в быстрые сайты с анимацией, обычно как единственный разработчик на проекте: анимация на GSAP, WebGL и шейдеры, 3D, на Webflow, Shopify или собственном коде. Мой последний проект, Noho, получил Awwwards Site of the Day и Developer Award. Открыт к проектной работе, частичной или полной занятости.</p>
+        <p class="summary">Креативный фронтенд-разработчик маркетинговых сайтов с большим количеством анимации. Веду сборку целиком: Webflow или собственный код, GSAP, WebGL/GLSL, 3D-ассеты и работа над производительностью, чтобы всё это оставалось быстрым. Полтора года делал сайты на субподряде для ActivBody и ActivForce, а также Noho, который получил Awwwards Site of the Day и Developer Award в 2026 году.</p>
       </section>
 
       <section>
@@ -46,9 +46,10 @@
       <section>
         <h2>Навыки</h2>
         <ul class="skills">
-          <li><span>Motion и 3D:</span> GSAP, anime.js, Lenis, WebGL, GLSL, OGL, Three.js, React Three Fiber, glTF, Blender</li>
-          <li><span>Frontend:</span> HTML, CSS, SCSS, JavaScript, TypeScript, React, Vite, esbuild, Node.js, Git</li>
-          <li><span>Платформы:</span> Webflow, Shopify, Cloudflare Pages, Docker</li>
+          <li><span>Motion и 3D:</span> GSAP, anime.js, Lenis, WebGL, GLSL, Three.js, React Three Fiber, glTF, Blender</li>
+          <li><span>Frontend:</span> HTML, CSS, SCSS, JavaScript, TypeScript, React, Vite, Zustand</li>
+          <li><span>Платформы и доставка:</span> Webflow, Shopify, Cloudflare Pages; пайплайн публикации на Node.js с HMAC-подписью вебхуков, Docker</li>
+          <li><span>Производительность:</span> Core Web Vitals, Lighthouse, поэтапная загрузка, сжатие Draco</li>
         </ul>
       </section>
 
@@ -57,7 +58,7 @@
         <article class="job">
           <div class="job-head">
             <h3>Creative Frontend Developer — фриланс</h3>
-            <span class="when">окт. 2024 – н. в.</span>
+            <span class="when">2024 – н. в.</span>
           </div>
           <p class="sub">удалённо</p>
         </article>
@@ -66,13 +67,11 @@
             <h3>Noho — интерактивный концепт-сайт</h3>
             <span class="when">апр. – июль 2026</span>
           </div>
-          <p class="sub">дизайн: Eugene Morev · <a href="https://noho.ink" target="_blank" rel="noopener noreferrer">noho.ink</a></p>
+          <p class="sub">дизайн и текст: Eugene Morev · <a href="https://noho.ink" target="_blank" rel="noopener noreferrer">noho.ink</a></p>
           <ul class="bullets">
-            <li>Один сделал весь фронтенд на Webflow с анимацией на GSAP и собственным GLSL-эффектом; сайт получил Awwwards Site of the Day и Developer Award, FWA of the Day и CSSDA Website of the Day.</li>
-            <li>Перенёс сайт с хостинга Webflow на Cloudflare Pages и переработал CSS и порядок загрузки: Lighthouse Performance (desktop) вырос примерно с 71 до 97, а сайт проходит Core Web Vitals на десктопе по данным реальных пользователей (LCP 0,9 с).</li>
-            <li>Сделал пайплайн публикации на Node.js: подписанный вебхук Webflow запускает выгрузку сайта и CMS через Data API, пересборку с моими бандлами, проверку и деплой на Cloudflare Pages через Wrangler, так что публикация в Webflow сразу уходит в продакшн.</li>
-            <li>Сократил 3D-ассеты на 80% (две модели по 5 МБ превратились в один файл на 2 МБ): объединил модели и сжал их через Draco.</li>
-            <li>Снизил нагрузку на CPU полноэкранной заставки в простое с 4–10% до 0,3–1,5%; шейдерный эффект держит около 100 FPS при 14,7× замедлении CPU.</li>
+            <li>Сделал весь фронтенд на Webflow: scroll- и timeline-анимации на GSAP, собственный GLSL-шейдер и интерактивную 3D-сцену с креслом, собранную из существующих моделей кресла в один оптимизированный ассет; выпустил две версии сайта и 3D-площадку со случайным креслом.</li>
+            <li>Перенёс хостинг с Webflow на статические файлы в Cloudflare Pages и переработал загрузку и рантайм. Core Web Vitals по реальным пользователям: 90% Good LCP (P75 0,97 с), 84% Good INP, 93% Good CLS (Cloudflare Web Analytics, окт.–нояб. 2026).</li>
+            <li>Снизил нагрузку заставки в простое с 4–10% CPU до 0,3–1,5%; шейдер держит около 100 FPS при 14,7× замедлении CPU. Объединил две модели кресла по 5 МБ в один ассет на 2 МБ со сжатием Draco.</li>
           </ul>
         </article>
         <article class="project">
@@ -82,10 +81,10 @@
           </div>
           <p class="sub">фронтенд на субподряде, через независимого дизайнера</p>
           <ul class="bullets">
-            <li>Как единственный разработчик сделал Shopify-тему на 14 страниц с анимацией на GSAP, секциями из CMS и собственным GLSL-градиентом на фоне; довёл её через девять месяцев разработки и многократные изменения дизайна.</li>
-            <li>Превратил CAD-модель инженеров в 600-кадровую анимацию при прокрутке, которая рисуется через WebGL, с видео вместо неё на слабых устройствах: почистил меш, настроил материалы, свет и анимацию в Blender.</li>
-            <li>Спроектировал поэтапную загрузку секвенции (сначала каждый десятый кадр, затем промежуточные) и провёл несколько раундов оптимизации сайта: LCP снизился с 4,5–7 с до 1,3–2 с, а потребление памяти на самой тяжёлой странице — с 600–700 МБ до 300–350 МБ.</li>
-            <li>Участвовал в дизайне с этапа концепта и отмечал идеи, которые трудно реализовать, чтобы дизайн оставался реальным для разработки.</li>
+            <li>Единственный разработчик кастомной Shopify-темы на 14 страниц, от препродакшена до запуска.</li>
+            <li>Превратил CAD-модель инженеров в 600-кадровую 3D-секвенцию, которая управляется прокруткой и рисуется через WebGL, с видео-фолбэком для слабых устройств.</li>
+            <li>Спроектировал поэтапную загрузку кадров и провёл раунды оптимизации: LCP с 4,5–7 с до 1,3–2 с; память на самой тяжёлой странице с 600–700 МБ до 300–350 МБ (замеры до передачи; живой сайт с тех пор изменил клиент).</li>
+            <li>Участвовал в обсуждениях дизайна с этапа концепта и отмечал идеи, которые было бы трудно реализовать.</li>
           </ul>
         </article>
         <article class="project">
@@ -95,7 +94,7 @@
           </div>
           <p class="sub">фронтенд на субподряде, через независимого дизайнера · <a href="https://activbody.com" target="_blank" rel="noopener noreferrer">activbody.com</a></p>
           <ul class="bullets">
-            <li>Как единственный разработчик сделал одностраничный сайт на Webflow с CMS и анимацией по всей странице (анимированный дашборд с данными в первом экране на anime.js, перетекающие SVG-градиенты), подстраивая сборку под изменения дизайна по ходу проекта.</li>
+            <li>Сделал сайт на Webflow с CMS и анимированным дашбордом с данными в первом экране на anime.js (живые графики, шкалы, бегущие счётчики); перетекающие SVG-градиенты и плавная прокрутка на Lenis.</li>
           </ul>
         </article>
         <article class="job">
@@ -105,24 +104,19 @@
           </div>
           <p class="sub">удалённо</p>
           <ul class="bullets">
-            <li>Вёл пятерых разработчиков через четыре недельных спринта на двух сервисах CRM для некоммерческих организаций: задал архитектуру, декомпозировал и распределял задачи, проводил code review.</li>
-            <li>Сделал регистрацию и управление аккаунтом для некоммерческих организаций, полностью реализованные на моковых данных. TypeScript, React, Moleculer, MongoDB, Storybook.</li>
-          </ul>
-        </article>
-        <article class="job">
-          <div class="job-head">
-            <h3>Системный администратор — Эталон Менеджмент</h3>
-            <span class="when">сент. 2022 – март 2024</span>
-          </div>
-          <p class="sub">Москва</p>
-          <ul class="bullets">
-            <li>Один из четырёх администраторов: около 300 пользователей и 4 локальных сервера. По своей инициативе внедрил мониторинг Zabbix, который заменил звонки о проблемах с принтерами утренней проверкой уведомлений (позже его расширили на другое оборудование), и сделал возможной массовую установку сертификатов электронной подписи.</li>
+            <li>Вёл пятерых разработчиков через четыре недельных спринта на двух сервисах CRM для некоммерческих организаций: задал архитектуру, декомпозировал задачи, проводил code review. TypeScript, React, Moleculer, MongoDB, Storybook.</li>
           </ul>
         </article>
       </section>
 
       <section>
         <h2>Личные проекты</h2>
+        <article class="project mini">
+          <div class="project-head">
+            <h3>Auragen</h3>
+          </div>
+          <p class="sub">React, TypeScript, WebGL2 · open-source инструмент для анимированных градиентов с экспортом в PNG и видео · <a href="https://intredd.github.io/auragen/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/auragen" target="_blank" rel="noopener noreferrer">code</a></p>
+        </article>
         <article class="project mini">
           <div class="project-head">
             <h3>Peel Gallery</h3>
@@ -133,19 +127,7 @@
           <div class="project-head">
             <h3>Letters on Skin</h3>
           </div>
-          <p class="sub">React Three Fiber + GSAP · набранные буквы падают на 3D-меш и ложатся на его поверхность · <a href="https://intredd.github.io/letters-on-skin/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/letters-on-skin" target="_blank" rel="noopener noreferrer">code</a></p>
-        </article>
-        <article class="project mini">
-          <div class="project-head">
-            <h3>Auragen</h3>
-          </div>
-          <p class="sub">React, TypeScript, WebGL2 · open-source инструмент для анимированных градиентов с экспортом в PNG и видео, сначала сделанный для клиентского проекта · <a href="https://intredd.github.io/auragen/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/auragen" target="_blank" rel="noopener noreferrer">code</a></p>
-        </article>
-        <article class="project mini">
-          <div class="project-head">
-            <h3>Tiles Gallery</h3>
-          </div>
-          <p class="sub">React + CSS 3D · 3D-галерея фотографий без canvas · <a href="https://intredd.github.io/tiles-gallery/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/tiles-gallery" target="_blank" rel="noopener noreferrer">code</a></p>
+          <p class="sub">React Three Fiber + GSAP · набранный текст ложится на 3D-меш · <a href="https://intredd.github.io/letters-on-skin/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/letters-on-skin" target="_blank" rel="noopener noreferrer">code</a></p>
         </article>
       </section>
 

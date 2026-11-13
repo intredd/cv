@@ -34,7 +34,7 @@
 
       <section>
         <h2>Summary</h2>
-        <p class="summary">I turn finished designs into fast, animated websites, usually as the only developer on the project: GSAP motion, WebGL and shaders, 3D, in Webflow, Shopify or custom code. My latest project, Noho, won Awwwards Site of the Day and the Developer Award. Available for project work, part-time or full-time.</p>
+        <p class="summary">Creative frontend developer for motion-heavy marketing sites. I own the build end-to-end: Webflow or custom code, GSAP, WebGL/GLSL, 3D assets, and the performance work that keeps them fast. A year and a half of subcontracted delivery for ActivBody and ActivForce, plus Noho, which won Awwwards Site of the Day and the Developer Award in 2026.</p>
       </section>
 
       <section>
@@ -46,9 +46,10 @@
       <section>
         <h2>Skills</h2>
         <ul class="skills">
-          <li><span>Motion &amp; 3D:</span> GSAP, anime.js, Lenis, WebGL, GLSL, OGL, Three.js, React Three Fiber, glTF, Blender</li>
-          <li><span>Frontend:</span> HTML, CSS, SCSS, JavaScript, TypeScript, React, Vite, esbuild, Node.js, Git</li>
-          <li><span>Platforms:</span> Webflow, Shopify, Cloudflare Pages, Docker</li>
+          <li><span>Motion &amp; 3D:</span> GSAP, anime.js, Lenis, WebGL, GLSL, Three.js, React Three Fiber, glTF, Blender</li>
+          <li><span>Frontend:</span> HTML, CSS, SCSS, JavaScript, TypeScript, React, Vite, Zustand</li>
+          <li><span>Platforms &amp; delivery:</span> Webflow, Shopify, Cloudflare Pages; Node.js publish pipeline with HMAC-signed webhooks, Docker</li>
+          <li><span>Performance:</span> Core Web Vitals, Lighthouse, staged loading, Draco compression</li>
         </ul>
       </section>
 
@@ -57,7 +58,7 @@
         <article class="job">
           <div class="job-head">
             <h3>Creative Frontend Developer — Freelance</h3>
-            <span class="when">Oct 2024 – present</span>
+            <span class="when">2024 – present</span>
           </div>
           <p class="sub">Remote</p>
         </article>
@@ -66,13 +67,11 @@
             <h3>Noho — interactive concept site</h3>
             <span class="when">Apr – Jul 2026</span>
           </div>
-          <p class="sub">design: Eugene Morev · <a href="https://noho.ink" target="_blank" rel="noopener noreferrer">noho.ink</a></p>
+          <p class="sub">design and copy: Eugene Morev · <a href="https://noho.ink" target="_blank" rel="noopener noreferrer">noho.ink</a></p>
           <ul class="bullets">
-            <li>Built the whole frontend alone in Webflow, with GSAP animation and a custom GLSL effect; the site won Awwwards Site of the Day and the Developer Award, FWA of the Day and CSSDA Website of the Day.</li>
-            <li>Moved the site from Webflow hosting to Cloudflare Pages and reworked the CSS and load order: Lighthouse Performance (desktop) went from about 71 to 97, and the site passes Core Web Vitals on desktop for real users (LCP 0.9 s).</li>
-            <li>Built the publish pipeline in Node.js: a signed Webflow webhook triggers a pull of the site and CMS through the Data API, a full rebuild with my own bundles, a verification gate and a Wrangler deploy to Cloudflare Pages, so publishing in Webflow is the production deploy.</li>
-            <li>Cut the 3D assets by 80% (two 5 MB models down to one 2 MB file) by merging the models and compressing them with Draco.</li>
-            <li>Cut the CPU use of the fullscreen idle screensaver from 4–10% to 0.3–1.5%, and kept the shader effect at about 100 FPS under 14.7× CPU throttling.</li>
+            <li>Built the entire frontend in Webflow: GSAP scroll and timeline motion, a custom GLSL shader, and an interactive 3D chair scene adapted from the existing chair models into one optimized asset; shipped two versions plus a 3D playground with a randomized chair.</li>
+            <li>Moved hosting from Webflow to static files on Cloudflare Pages and reworked loading and runtime. Real-user Core Web Vitals: 90% Good LCP (P75 0.97 s), 84% Good INP, 93% Good CLS (Cloudflare Web Analytics, Oct–Nov 2026).</li>
+            <li>Cut the idle screensaver from 4–10% CPU to 0.3–1.5%; the shader holds about 100 FPS under 14.7× CPU throttling. Merged two 5 MB chair models into one 2 MB Draco-compressed asset.</li>
           </ul>
         </article>
         <article class="project">
@@ -82,10 +81,10 @@
           </div>
           <p class="sub">subcontracted frontend, via an independent designer</p>
           <ul class="bullets">
-            <li>Delivered a 14-page Shopify theme as the only developer, with GSAP motion, CMS-driven sections and a custom GLSL gradient background, through nine months of development and repeated design changes.</li>
-            <li>Turned the engineering team's CAD model into a 600-frame scroll animation drawn through WebGL, with a video fallback for low-end devices: cleaned the mesh and built materials, lighting and animation in Blender.</li>
-            <li>Designed staged loading for the frame sequence (every tenth frame first, then the gaps) and ran repeated optimization rounds across the site: LCP went from 4.5–7 s to 1.3–2 s, and memory on the heaviest page from 600–700 MB to 300–350 MB.</li>
-            <li>Joined the design work from the concept stage and flagged ideas that would be hard to build, so the design stayed realistic to develop.</li>
+            <li>Sole developer of a 14-page custom Shopify theme, from pre-production to launch.</li>
+            <li>Turned the engineering team's CAD model into a 600-frame scroll-driven 3D sequence rendered through WebGL, with a video fallback for low-end devices.</li>
+            <li>Designed staged frame loading and ran optimization rounds: LCP 4.5–7 s to 1.3–2 s; memory on the heaviest page 600–700 MB to 300–350 MB (measured before handoff; the live site has since been changed by the client).</li>
+            <li>Joined design discussions from the concept stage and flagged ideas that would be hard to build.</li>
           </ul>
         </article>
         <article class="project">
@@ -95,7 +94,7 @@
           </div>
           <p class="sub">subcontracted frontend, via an independent designer · <a href="https://activbody.com" target="_blank" rel="noopener noreferrer">activbody.com</a></p>
           <ul class="bullets">
-            <li>Built a one-page Webflow site with CMS and custom animation throughout (an animated data-dashboard hero in anime.js, morphing SVG gradient blobs) as the only developer, absorbing design changes made mid-project.</li>
+            <li>Built a Webflow site with CMS and an animated data-dashboard hero in anime.js (live graphs, gauges, rolling counters); morphing SVG gradient blobs and Lenis smooth scroll.</li>
           </ul>
         </article>
         <article class="job">
@@ -105,24 +104,19 @@
           </div>
           <p class="sub">Remote</p>
           <ul class="bullets">
-            <li>Led five developers through four one-week sprints on two services of a CRM for nonprofits: set the architecture, broke down and assigned tasks, reviewed code.</li>
-            <li>Delivered the registration and account-management flows for nonprofit organisations, fully implemented on mocked data. TypeScript, React, Moleculer, MongoDB, Storybook.</li>
-          </ul>
-        </article>
-        <article class="job">
-          <div class="job-head">
-            <h3>System Administrator — Etalon Management</h3>
-            <span class="when">Sep 2022 – Mar 2024</span>
-          </div>
-          <p class="sub">Moscow</p>
-          <ul class="bullets">
-            <li>One of four administrators for about 300 users and 4 on-site servers. Set up Zabbix monitoring on my own initiative, replacing calls about printer problems with a morning alert check (later extended to other equipment), and made bulk installation of digital-signature certificates possible.</li>
+            <li>Led five developers through four one-week sprints on two services of a CRM for nonprofits: set the architecture, broke down tasks, reviewed code. TypeScript, React, Moleculer, MongoDB, Storybook.</li>
           </ul>
         </article>
       </section>
 
       <section>
         <h2>Personal projects</h2>
+        <article class="project mini">
+          <div class="project-head">
+            <h3>Auragen</h3>
+          </div>
+          <p class="sub">React, TypeScript, WebGL2 · open-source animated gradient tool with PNG and video export · <a href="https://intredd.github.io/auragen/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/auragen" target="_blank" rel="noopener noreferrer">code</a></p>
+        </article>
         <article class="project mini">
           <div class="project-head">
             <h3>Peel Gallery</h3>
@@ -133,19 +127,7 @@
           <div class="project-head">
             <h3>Letters on Skin</h3>
           </div>
-          <p class="sub">React Three Fiber + GSAP · typed letters fall onto a 3D mesh and settle on its surface · <a href="https://intredd.github.io/letters-on-skin/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/letters-on-skin" target="_blank" rel="noopener noreferrer">code</a></p>
-        </article>
-        <article class="project mini">
-          <div class="project-head">
-            <h3>Auragen</h3>
-          </div>
-          <p class="sub">React, TypeScript, WebGL2 · open-source animated gradient tool with PNG and video export, first built for a client project · <a href="https://intredd.github.io/auragen/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/auragen" target="_blank" rel="noopener noreferrer">code</a></p>
-        </article>
-        <article class="project mini">
-          <div class="project-head">
-            <h3>Tiles Gallery</h3>
-          </div>
-          <p class="sub">React + CSS 3D · 3D photo gallery built without canvas · <a href="https://intredd.github.io/tiles-gallery/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/tiles-gallery" target="_blank" rel="noopener noreferrer">code</a></p>
+          <p class="sub">React Three Fiber + GSAP · typed text settles on a 3D mesh · <a href="https://intredd.github.io/letters-on-skin/" target="_blank" rel="noopener noreferrer">live</a> · <a href="https://github.com/intredd/letters-on-skin" target="_blank" rel="noopener noreferrer">code</a></p>
         </article>
       </section>
 
